@@ -1,0 +1,431 @@
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+
+body{
+  background-color: #1F2021 !important;
+  background-image: url("http://www.hd-free-wallpapers.org/wp-content/uploads/2014/08/really-cool-background-pictures.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+
+}
+
+.box{
+  width: 100%;
+}
+
+.welcome{
+  color: gold;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.worldimg{
+  height: 120px;
+  width: 130px;
+  border-radius: 30px;
+  margin-left: 35%;
+}
+
+#map{
+  height: 400px;
+  width: 1350px;
+  margin-left: 130px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 4%;
+}
+
+#welcome{
+  color: gold;
+}
+
+#wantedlocation{
+  color: gold;
+}
+
+.searchbar{
+  height: 35px;
+  width: 220px;
+  margin-left: 150px;
+  border-radius: 5px;
+  border: 3px solid gold;
+}
+
+
+.Go{
+}
+
+#toggle_weather{
+  float: right;
+  margin-right: 14%;
+  font-size: 15px;
+}
+
+#toggle_traffic{
+  float: right;
+}
+
+.footer{
+  margin-top: 35%;
+}
+
+.facebook{
+  font-size: 1.5em;
+  color: #4C67A1;
+  text-decoration: overline;
+}
+
+.facebook:hover{
+  font-size: 20px;
+}
+
+.linkedin{
+  margin-left: 600%;
+  font-size: 1.5em;
+  color: #0077B5;
+  text-decoration: overline;
+}
+
+.linkedin:hover{
+    font-size: 20px;
+}
+
+.github{
+  margin-left: 900%;
+  font-size: 1.5em;
+  color: #F5F5F5;
+  text-decoration: overline;
+}
+
+.github:hover{
+  font-size: 20px;
+  padding: 1.5px;
+}
+
+.facebookcontain{
+  width: 10.5%;
+}
+
+.linkedincontain{
+  width: 12%;
+}
+
+.githubcontain {
+
+}
+
+.footer li{
+  float: left;
+  display: inline;
+}
+
+
+/*section, section div {*/
+  /* See it in slo-mo, you can change this */
+  /*transition-duration: 1.3s;*/
+/*}*/
+
+/** { box-sizing: border-box; }*/
+/*html, body { height: 100%; }*/
+
+/*section{*/
+    /*width: 5%;*/
+    /*margin-top: 50px;
+    margin-left: 1080px;*/
+    /*float: right;*/
+
+/*}*/
+
+/*section, .button { transition-timing-function: ease; }
+
+  section {
+    display: inline-block;
+    position: relative;
+    padding: .375rem .375rem 0;
+    height: 2.5rem;
+    background: gold;
+    border-radius: .25rem;
+    perspective: 300;
+    box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+  }
+
+
+.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.innie, .outie, .spine, .shadow { position: absolute; width: 100%; }
+
+.innie, .outie {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}*/
+/*.innie:after, .outie:after, .spine:after, .shadow:after { content: "Facebook!";*/
+  /*text-decoration: "Times new roman";*/
+  /*font-size: 85%;*/
+/*}*/
+
+/*.shadow {
+  top: 100%;
+  left: 0;
+  height: 300px;
+  transform-origin: center top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+.outie {
+  background-color: #3D5B9C;
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+section:hover { background: #FD6565; }
+section:hover .button { opacity: 10; }
+
+section:hover .cover, section:hover .innie, section:hover .spine, section:hover .outie, section:hover .spine { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+section:hover .cover { transform: rotateX(-120deg);  }*/
+
+/*section:hover .innie { background-color: #3ADAFC; }
+section:hover .spine { background-color: #52B1E0; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }*/
+
+/*section:hover .shadow {
+  opacity: 1;
+  transform: rotateX(45deg) scale(.95);
+}*/
+
+
+
+
+
+/*.section2{*/
+  /*margin-bottom: 100px;
+  margin-left: 1200px;
+  /*display: inline-block;*/
+  /*float: right;*/
+/*}*/
+
+/*.section2, section div {*/
+  /* See it in slo-mo, you can change this */
+  /*transition-duration: 1.3s;*/
+/*}*/
+
+/** { box-sizing: border-box; }*/
+/*html, body { height: 100%; }*/
+
+/*.section2{*/
+  /*width: 5%;*/
+  /*margin-top: 50px;
+  margin-left: 1080px;*/
+  /*float: right;*/
+
+/*}*/
+
+/*.section2{*/
+  /*margin-bottom: 100px;
+  margin-left: 1200px;
+  /*display: inline-block;*/
+  /*float: right;
+}
+
+.section2, .button { transition-timing-function: ease; }
+
+.section2 {
+  display: inline-block;
+  position: relative;
+  padding: .375rem .375rem 0;
+  height: 2.5rem;
+  background: black;
+  border-radius: .25rem;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+}
+
+
+.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.innie2, .outie2, .spine2, .shadow2 { position: absolute; width: 100%; }
+
+.innie2, .outie2 {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}
+.innie2:after, .outie2:after, .spine2:after, .shadow2:after { content: "GitHub!";*/
+/*text-decoration: "Times new roman";*/
+/*font-size: 90%;
+}*/
+
+/*.shadow {*/
+  /*top: 100%;*/
+  /*left: 0;*/
+  /*height: 300px;*/
+  /*transform-origin: center top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+.outie2 {
+  background-color: black;
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.section2:hover { background: #C5C8C6; }
+.section2:hover .button { opacity: 10; }
+
+.section2:hover .cover, section:hover .innie, section:hover .spine, section:hover .outie, section:hover .spine { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+.section2:hover .cover { transform: rotateX(-120deg);  }*/
+
+/*section:hover .innie { background-color: #3ADAFC; }
+section:hover .spine { background-color: #52B1E0; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }*/
+
+/*.section2:hover .shadow {
+  opacity: 1;
+  transform: rotateX(45deg) scale(.95);
+}*/
+
+
+
+
+
+
+
+/*.section3{*/
+  /*margin-bottom: 100px;
+  margin-left: 1200px;
+  /*display: inline-block;*/
+  /*float: right;*/
+/*}*/
+
+/*.section3, section div {*/
+  /* See it in slo-mo, you can change this */
+  /*transition-duration: 1.3s;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }*/
+
+/*.section3{*/
+  /*width: 5%;*/
+  /*margin-top: 50px;
+  margin-left: 1080px;*/
+  /*float: right;*/
+
+/*}*/
+
+/*.section3{*/
+  /*margin-bottom: 100px;
+  margin-left: 1200px;
+  /*display: inline-block;*/
+  /*float: right;*/
+/*}*/
+
+/*.section3, .button { transition-timing-function: ease; }
+
+.section3 {
+  display: inline-block;
+  position: relative;
+  padding: .375rem .375rem 0;
+  height: 2.5rem;
+  background: white;
+  border-radius: .25rem;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+}
+
+
+.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.innie3, .outie3, .spine3, .shadow3 { position: absolute; width: 100%; }
+
+.innie3, .outie3 {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}
+.innie3:after, .outie3:after, .spine3:after, .shadow3:after { content: "LinkedIn!";*/
+/*text-decoration: "Times new roman";*/
+/*font-size: 90%;*/
+/*}*/
+
+/*.shadow {*/
+  /*top: 100%;*/
+  /*left: 0;*/
+  /*height: 300px;*/
+  /*transform-origin: center top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+.outie3 {
+  background-color: #117FB9;
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.section3:hover { background: #117FB9; }
+.section3:hover .button { opacity: 10; }
+
+.section3:hover .cover, section:hover .innie, section:hover .spine, section:hover .outie, section:hover .spine { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+.section3:hover .cover { transform: rotateX(-120deg);  }*/
+
+/*section:hover .innie { background-color: #3ADAFC; }
+section:hover .spine { background-color: #52B1E0; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }*/
+
+/*.section3:hover .shadow {
+  opacity: 1;
+  transform: rotateX(45deg) scale(.95);
+}*/

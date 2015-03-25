@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Discover The World
+    script(src='geoPosition.js')
+    link(rel='stylesheet', href='/css/animate.css')    
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/js/dist/css/bootstrap.css')
+  body
+    
+    
+    h1.welcome.animated.bounceInDown Discover The World
+    
+    #map.animated.bounceInUp
+    
+    .box
+      input#lat(ng-model='lat', type="hidden", name='lat')
+      input#lng(ng-model='lng', type='hidden', name='lng')
+      input#name.animated.zoomIn.searchbar(name='name', type='text', placeholder='Enter wanted location!', autofocus=true)
+      button#toggle_button.btn.btn-danger.animated.zoomIn(type='button') GO!
+      button#toggle_weather.btn.btn-primary.animated.flip(type='button') Weather
+      button#toggle_traffic.btn.btn-warning.animated.flip(type='button') Traffic
+      
+      
+        //- .buttonContainer    
+        //-   section.faceBook
+        //-     div.button
+        //-       a.facebook-follow-button(href='https://www.facebook.com/seif.haddad', data-show-count='false', data-size='large') click me!
+        //-       //- script
+        //-       //-   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        //-     div.cover
+        //-       div.innie
+        //-       div.spine
+        //-       div.outie
+        //-     div.shadow
+        //-   small
+        //-     a(target='_blank', href='http://dribbble.com/shots/457259-Facebook-Button-Concept')
+        //-   div#container.col
+        //-     
+        //-   section.section2
+        //-     div.button.LinkedIn
+        //-       a.facebook-follow-button(href='https://github.com/seifhaddad', data-show-count='false', data-size='large') click me!
+        //-       script
+        //-         //- !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        //-     div.cover.cover2
+        //-       div.innie.innie2
+        //-       div.spine.spine2
+        //-       div.outie.outie2
+        //-     div.shadow.shadow2
+        //-   small
+        //-     //- a(target='_blank', href='http://dribbble.com/shots/457259-Facebook-Button-Concept')
+        //-   div#container.col
+        //-     
+        //-   section.section3
+        //-     div.button.LinkedIn
+        //-       a.facebook-follow-button(href='https://www.linkedin.com/profile/view?id=376670705&trk=nav_responsive_tab_profile', data-show-count='false', data-size='large') click me!
+        //-       script
+        //-         //- !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        //-     div.cover.cover3
+        //-       div.innie.innie3
+        //-       div.spine.spine3
+        //-       div.outie.outie3
+        //-     div.shadow.shadow3
+        //-   small
+        //-     //- a(target='_blank', href='http://dribbble.com/shots/457259-Facebook-Button-Concept')
+        //-   div#container.col
+    .footer
+      ul
+        li.facebookcontain
+          a(href='https://www.facebook.com/seif.haddad')
+            p.facebook.animated.bounceInDown facebook
+        li.githubcontain  
+          a(href='https://github.com/seifhaddad')
+            p.github.animated.bounceInDown GitHub
+        li.linkedincontain 
+          a(href='https://www.linkedin.com/profile/view?id=376670705&trk=nav_responsive_tab_profile')
+            p.linkedin.animated.bounceInDown LinkedIn   
+              
+    script(src='/js/jquery-2.1.1.min.js')
+    script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,weather")
+    script(src='js/main.js')
+    script(src='/js/dist/js/bootstrap.js')
