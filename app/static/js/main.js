@@ -33,37 +33,60 @@
 
   var request = {
     location: mapCity,
-    radius: 12000,
+    radius: 150000,
     query: 'hotels'
   };
-  // infowindow = new google.maps.InfoWindow();
-  // var service = new google.maps.places.PlacesService(map);
-  // service.textSearch(request, callback);
+  infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+  service.textSearch(request, callback);
 }
 
-var weatherLayer =new google.maps.weather.WeatherLayer({
-  temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
-}),
-cloudLayer = new google.maps.weather.CloudLayer();
-
-$('#toggle_weather').click(function(){
-  if(weatherLayer.getMap() || cloudLayer.getMap()){
-    weatherLayer.setMap(null);
-    cloudLayer.setMap(null);
-  }else{
-    weatherLayer.setMap(map);
-    cloudLayer.setMap(map);
+  function callback(results, status){
+    if (status === google.maps.places.PlacesServiceStatus.OK){
+      for (var i = 0; i < results.length; i++){
+        createMarker(results[i]);
+      }
+    }
   }
-});
 
-var trafficLayer = new google.maps.TrafficLayer();
-$('#toggle_traffic').click(function(){
-  if(trafficLayer.getMap()){
-    trafficLayer.setMap(null);
-  }else{
-    trafficLayer.setMap(map);
+  function createMarker(place){
+    var placeLoc = place.geometry.location,
+    marker = new google.maps.Marker({
+      icon: '/img/marker_h5.png',
+      map: map,
+      animation: google.maps.Animation.DROP,
+      position: placeLoc
+    });
+    google.maps.event.addListener(marker, 'click', function(){
+      infowindow.setContent(place.name);
+      infowindow.open(map, this);
+    });
   }
-});
+
+
+  var weatherLayer =new google.maps.weather.WeatherLayer({
+    temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
+  }),
+  cloudLayer = new google.maps.weather.CloudLayer();
+
+  $('#toggle_weather').click(function(){
+    if(weatherLayer.getMap() || cloudLayer.getMap()){
+      weatherLayer.setMap(null);
+      cloudLayer.setMap(null);
+    }else{
+      weatherLayer.setMap(map);
+      cloudLayer.setMap(map);
+    }
+  });
+
+  var trafficLayer = new google.maps.TrafficLayer();
+  $('#toggle_traffic').click(function(){
+    if(trafficLayer.getMap()){
+      trafficLayer.setMap(null);
+    }else{
+      trafficLayer.setMap(map);
+    }
+  });
 
   function geocode(event){
     var geocoder = new google.maps.Geocoder(),
