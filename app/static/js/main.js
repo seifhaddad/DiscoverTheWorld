@@ -60,7 +60,7 @@
     google.maps.event.addListener(marker, 'click', function(){
       // infowindow.setContent(place.name + " Ratings:" + place.rating + " stars " + place.formatted_address );
       infowindow.setContent('<span style="padding: 0px; text-align:left; align=left;"><h5>' + place.name + '&nbsp; &nbsp; ' + place.rating
-      + '</h5><p>' + place.formatted_address + '<br />' + place.formatted_phone_number + '<br />') ;
+      + '</h5><p>' + place.formatted_address + '<br />') ;
       infowindow.open(map, this);
     });
   }
