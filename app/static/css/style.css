@@ -5,8 +5,8 @@ body{
   background-color: #1F2021 !important;
   background-image: url("http://www.hd-free-wallpapers.org/wp-content/uploads/2014/08/really-cool-background-pictures.jpg");
   background-size: 100%;
-  background-attachment: fixed;
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box{

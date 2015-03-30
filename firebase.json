@@ -1,0 +1,9 @@
+{
+  "firebase": "discovertheworld",
+  "public": "app/static",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

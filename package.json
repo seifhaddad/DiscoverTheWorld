@@ -4,7 +4,8 @@
   "description": "Enter your zip and you will get the temp!",
   "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/jade/bin/jade.js app/views -o app/static"
   },
   "repository": {
     "type": "git",
